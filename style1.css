@@ -1,0 +1,225 @@
+
+.rec{
+    margin-top: 10px;
+
+}
+
+.c1{
+    padding:5px;
+    width: 350px;
+    height:45px;
+    font-size:xx-large;
+    border-radius: 45px;
+    margin-bottom: 5px;
+    text-align: center;
+    background-color: rgb(255, 228, 196,0.8);
+   
+
+
+}
+.line{
+    height: 3px;
+    width: 100%;
+    background-color: rgba(69, 66, 66, 0.633);
+    opacity: 0.5;
+
+}
+
+.main{
+    box-sizing: border-box;
+        padding:10px;
+        padding-top: 20px;
+        /* rgba(255, 255, 255, 0.795) */
+        background-color: rgba(255, 255, 255, 0.795);
+        width:370px;
+        border-radius: 30px !important;
+        box-shadow: 2px 2px 2px 2px rgb(73, 73, 73);
+        /* position: absolute;
+        bottom: 10px; */
+        margin-bottom: 10px;
+        margin-top: 30px;
+        
+
+    }
+
+.button-rec{
+        /* margin-left:8px;  */
+        /* position: relative; */
+        /* display:flex;
+        justify-content: center; 
+        flex-direction: column; */
+        box-sizing: border-box;
+        padding:5px;
+        /* rgba(255, 255, 255, 0.795) */
+        background-color: rgba(255, 255, 255, 0.795);
+        width:350px;
+        height:90px;
+        border-radius:25px;
+        box-shadow: 2px 2px 2px 2px rgb(73, 73, 73);
+        align-items: center;
+        margin-bottom: 30px;
+    }
+.button-rec:hover{
+    opacity:0.3;
+}
+.c2{
+    font-family:sans-serif;
+    font-weight:bold;
+    font-size:x-large;
+    text-align: center;
+    padding-top:25px;
+}
+.calendar_button{
+    display:flex;
+    flex-direction:row;
+    justify-content: center; 
+    gap:10px;
+    width:100%;
+    margin-top:10px;
+    align-items: end;
+    gap:30px;
+}
+
+
+#attendance_temp-rec{
+    padding:10px;
+}
+#name_button{
+    position:relative;
+    height:60px;
+    box-shadow:1px 1px 1px 1px grey;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom:10px;
+}
+.content-left{
+    display:inline-flex;
+    justify-content: center;
+    align-items:center;
+    align-items: center;
+    width:50px;
+    height:60px;
+    margin-left:5px;
+    /* padding:3px; */
+    
+}
+
+.content-center{
+    display:inline-block;
+    width:100px;
+    
+    
+    
+}
+.content-center div{
+    text-indent: 5px;
+}
+.stud_name{
+    font-size: larger;
+}
+.content-right{
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    right:0px;
+    top:0px;
+    text-align:center;
+    height:60px;
+    width:80px;
+    box-shadow:1px 1px 1px 1px grey;
+    border-radius: 20px;
+    background-color: rgb(255, 197, 130);
+}
+.stick{
+    /* position:sticky; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 3;
+    background-color: #CBDCF7;
+    padding-bottom:10px;
+    background-image: linear-gradient(#CBDCF7,#CBDCF7,#8a8d9058);
+   
+}
+
+.s1{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 2px;
+    gap: 2px;
+    height: 50px;
+    width: 100%;
+    display: none;
+}
+.g1{
+    
+    border-right: 1px solid rgba(103, 103, 103, 0.377);
+    /* border: 2px solid black; */
+    /* border-radius: 20px; */
+    height: 40px;
+    width:90px;
+    /* background-color: antiquewhite; */
+    
+}
+.g2{
+    
+    /* border: 2px solid black; */
+    /* border-radius: 20px; */
+    height: 50px;
+    width:25%;
+    background-color: rgb(255, 197, 130);
+    border-radius: 25px;
+}
+.s2{
+    padding:2px;
+    background-color: rgb(255, 230, 201);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: fit-content;
+    /* width:70%; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    border:2px solid black;
+        
+}
+.p1{
+    font-size: large;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+} 
+.p2{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    background-color: #CBDCF7;
+    width:100%;
+    display: block;
+    position: relative;
+    height: 30px;
+    display: none;
+}
+.fa {
+    font-size:30px;
+    position: absolute;
+    right: 10px;
+    
+
+}
+.save{
+    width: 25px;
+    height:25px;
+    margin-left:10px;
+    opacity: 0.5;
+    
+}
+

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule</title>
+    <style>
+        body{
+            width:100vw;
+            margin:0px;
+            padding:0px;
+            padding-bottom:10px;
+            
+        }
+        .session{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap:10px;
+            background-color: rgb(203,220,247);
+        }
+        .button{
+            /* margin-left:8px;  */
+            /* position: relative; */
+            /* display:flex;
+            justify-content: center; 
+            flex-direction: column; */
+            box-sizing: border-box;
+            padding:5px;
+            /* rgba(255, 255, 255, 0.795) */
+            background-color: rgba(255, 255, 255, 0.795);
+            width:370px;
+            height:90px;
+            border-radius:25px;
+            box-shadow: 2px 2px 2px 2px rgb(73, 73, 73);
+        }
+        .b-text{
+            font-family:sans-serif;
+            font-weight:bold;
+            font-size:x-large;
+            text-align: center;
+            padding-top:25px;
+        }
+        .bottom-button{
+            display:flex;
+            flex-direction:row;
+            justify-content: center; 
+            gap:10px;
+            width:100%;
+            margin-top:10px;
+            align-items: end;
+            /* border:2px solid black; */
+            gap:30px;
+
+        }
+        #attendance_temp{
+            padding:10px;
+        }
+        .bottom-button{
+            font-size:large;
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color:rgb(75, 75, 75);
+            
+        
+        }
+        .bottom{
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.642);
+            width:100%;
+            height:30px;
+        }
+        .button:hover{
+            opacity:0.3;
+        }
+        #name_button{
+            position:relative;
+            height:60px;
+            box-shadow:1px 1px 1px 1px grey;
+            border-radius: 20px;
+            background-color: rgb(255, 255, 255);
+            margin-bottom:10px;
+        }
+        .content-left{
+            display:inline-flex;
+            justify-content: center;
+            align-items:center;
+            align-items: center;
+            width:50px;
+            height:60px;
+            margin-left:5px;
+            /* padding:3px; */
+            
+        }
+        
+        .content-center{
+            display:inline-block;
+            width:100px;
+            
+            
+            
+        }
+        .content-center div{
+            text-indent: 5px;
+        }
+        .stud_name{
+            font-size: larger;
+        }
+        .content-right{
+            display:inline-flex;
+            justify-content: center;
+            align-items: center;
+            position:absolute;
+            right:0px;
+            top:0px;
+            text-align:center;
+            height:60px;
+            width:80px;
+            box-shadow:1px 1px 1px 1px grey;
+            border-radius: 20px;
+            background-color: rgb(255, 197, 130);
+        }
+        .b1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: large;
+            width: 100px;
+            height: 30px;
+            background-color: rgb(218, 218, 218);
+            border-radius: 20px;
+            box-shadow: 1px 1px 1px grey;
+        }
+        .b1:active{
+            opacity: 0.6;
+        }
+        
+
+        
+        
+    </style>
+</head>
+<body>
+    <div class="session" id="session">
+    <div class="button" id="session_button" style="margin-top:10px;">
+        <div class="b-text">SESSION 1</div>
+            <div class="bottom-button">
+                
+                <div>B.TECH IT</div>
+                <div>#3</div>
+                <div>A</div>
+            </div>
+    </div>
+    <div class="button" id="session_button">
+        <div class="b-text">SESSION 2</div>
+            <div class="bottom-button">
+                
+                <div>B.TECH IT</div>
+                <div>#3</div>
+                <div>A</div>
+            </div>
+    </div>
+    <div class="button" id="session_button">
+        <div class="b-text">SESSION 3</div>
+            <div class="bottom-button">
+                
+                <div>B.TECH IT</div>
+                <div>#3</div>
+                <div>A</div>
+            </div>
+    </div>
+    <div class="button" id="session_button">
+        <div class="b-text">SESSION 4</div>
+            <div class="bottom-button">
+                
+                <div>B.TECH IT</div>
+                <div>#3</div>
+                <div>A</div>
+            </div>
+    </div>
+    <div class="button" id="session_button">
+        <div class="b-text">SESSION 5</div>
+            <div class="bottom-button">
+                
+                <div>B.TECH IT</div>
+                <div>#3</div>
+                <div>A</div>
+            </div>
+    </div>
+    <div class="button" id="session_button">
+        <div class="b-text">SESSION 6</div>
+            <div class="bottom-button">
+                
+                <div>B.TECH IT</div>
+                <div>#3</div>
+                <div>A</div>
+            </div>
+    </div>
+    <div class="button" id="session_button">
+        <div class="b-text">SESSION 7</div>
+            <div class="bottom-button">
+                
+                <div>B.TECH IT</div>
+                <div>#3</div>
+                <div>A</div>
+            </div>
+    </div>
+    <div class="button" id="session_button">
+        <div class="b-text">SESSION 8</div>
+            <div class="bottom-button">
+                
+                <div>B.TECH IT</div>
+                <div>#3</div>
+                <div>A</div>
+            </div>
+    </div>
+    </div>
+    <div id="attendance_temp" style="display:none; margin-top:5px;" >
+       <div id="name_button" >
+        <div class="content-left"><img src="assets/profile2.png" class="stud_profile" width="50px" height="50px"></div>
+        <div class="content-center">
+            <div class="stud_name" >Dinesh</div>
+            <div >921321205035</div>
+        </div>
+            <div class="content-right">P</div>
+       </div>
+       <div id="name_button">
+        <div class="content-left"><img src="assets/profile2.png" class="stud_profile" width="50px" height="50px"></div>
+        <div class="content-center">
+            <div class="stud_name" >Dinesh</div>
+            <div >921321205035</div>
+        </div>
+            <div class="content-right">P</div>
+       </div>
+       <div id="name_button">
+        <div class="content-left"><img src="assets/profile2.png" class="stud_profile" width="50px" height="50px"></div>
+        <div class="content-center">
+            <div class="stud_name" >Dinesh</div>
+            <div >921321205035</div>
+        </div>
+            <div class="content-right">P</div>
+       </div>
+       <div id="name_button">
+        <div class="content-left"><img src="assets/profile2.png" class="stud_profile" width="50px" height="50px"></div>
+        <div class="content-center">
+            <div class="stud_name" >Dinesh</div>
+            <div >921321205035</div>
+        </div>
+            <div class="content-right">P</div>
+       </div>
+       <div id="name_button">
+        <div class="content-left"><img src="assets/profile2.png" class="stud_profile" width="50px" height="50px"></div>
+        <div class="content-center">
+            <div class="stud_name" >Dinesh</div>
+            <div >921321205035</div>
+        </div>
+            <div class="content-right">P</div>
+       </div>
+       <div id="name_button">
+        <div class="content-left"><img src="assets/profile2.png" class="stud_profile" width="50px" height="50px"></div>
+        <div class="content-center">
+            <div class="stud_name" >Dinesh</div>
+            <div >921321205035</div>
+        </div>
+            <div class="content-right">P</div>
+       </div>
+       <div id="name_button">
+        <div class="content-left"><img src="assets/profile2.png" class="stud_profile" width="50px" height="50px"></div>
+        <div class="content-center">
+            <div class="stud_name" >Dinesh</div>
+            <div >921321205035</div>
+        </div>
+            <div class="content-right">P</div>
+       </div>
+       <div id="name_button">
+        <div class="content-left"><img src="assets/profile2.png" class="stud_profile" width="50px" height="50px"></div>
+        <div class="content-center">
+            <div class="stud_name" >Dinesh</div>
+            <div >921321205035</div>
+        </div>
+            <div class="content-right">P</div>
+       </div>
+       <div id="name_button">
+        <div class="content-left"><img src="assets/profile2.png" class="stud_profile" width="50px" height="50px"></div>
+        <div class="content-center">
+            <div class="stud_name" >Dinesh</div>
+            <div >921321205035</div>
+        </div>
+            <div class="content-right">P</div>
+       </div>
+       <div id="name_button">
+        <div class="content-left"><img src="assets/profile2.png" class="stud_profile" width="50px" height="50px"></div>
+        <div class="content-center">
+            <div class="stud_name" >Dinesh</div>
+            <div >921321205035</div>
+        </div>
+            <div class="content-right">P</div>
+       </div>
+       <div id="name_button">
+        <div class="content-left"><img src="assets/profile2.png" class="stud_profile" width="50px" height="50px"></div>
+        <div class="content-center">
+            <div class="stud_name" >Dinesh</div>
+            <div >921321205035</div>
+        </div>
+            <div class="content-right">P</div>
+       </div>
+       <div id="name_button">
+        <div class="content-left"><img src="assets/profile2.png" class="stud_profile" width="50px" height="50px"></div>
+        <div class="content-center">
+            <div class="stud_name" >Dinesh</div>
+            <div >921321205035</div>
+        </div>
+            <div class="content-right">P</div>
+       </div>
+       <div id="name_button">
+        <div class="content-left"><img src="assets/profile2.png" class="stud_profile" width="50px" height="50px"></div>
+        <div class="content-center">
+            <div class="stud_name" >Dinesh</div>
+            <div >921321205035</div>
+        </div>
+            <div class="content-right">P</div>
+       </div>
+       <div id="name_button">
+        <div class="content-left"><img src="assets/profile2.png" class="stud_profile" width="50px" height="50px"></div>
+        <div class="content-center">
+            <div class="stud_name" >Dinesh</div>
+            <div >921321205035</div>
+        </div>
+            <div class="content-right">P</div>
+       </div>
+       <div id="name_button">
+        <div class="content-left"><img src="assets/profile2.png" class="stud_profile" width="50px" height="50px"></div>
+        <div class="content-center">
+            <div class="stud_name" >Dinesh</div>
+            <div >921321205035</div>
+        </div>
+            <div class="content-right">P</div>
+       </div>
+       <div id="name_button">
+        <div class="content-left"><img src="assets/profile2.png" class="stud_profile" width="50px" height="50px"></div>
+        <div class="content-center">
+            <div class="stud_name" >Dinesh</div>
+            <div >921321205035</div>
+        </div>
+            <div class="content-right">P</div>
+       </div>
+       <center><div class="b1">submit </div></center>
+    </div>
+    
+    <script>
+        const sessions=document.getElementById("session");
+        const buttons=document.querySelectorAll(".button")
+        const att_temp=document.getElementById("attendance_temp")
+        buttons.forEach((button)=>{
+            button.addEventListener("click",()=>{
+                sessions.style.display='none';
+                att_temp.style.display='block';
+            })
+        })
+        // const att_temp=document.getElementById("attendance_temp")
+        // session.addEventListener('click',()=>{
+        //     session.style.display='none';
+        //     att_temp.style.display='block';
+        // })
+    </script>
+</body>
+</html>

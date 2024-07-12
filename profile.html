@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{
+    margin: 0%;
+    padding: 0%;
+    }
+
+ .profile_header{
+    width: 100vw;
+    height: 850px;
+    background-color:white;
+    
+    /* border-radius: 0px 0px 40px 40px;  */
+    
+ }
+ img{
+    padding-top: 10px;
+ }
+.back{
+    margin-left: 25px;
+    position: fixed;
+    top: 12px;
+    left: 1px;
+    font-size: large;
+}
+.edit{
+    position: fixed;
+    top: -2px;
+    right: 5px;
+}
+ 
+
+ .psna{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+ }
+
+
+.profile{
+    /* margin-top: 35px; */
+    border: 0px;
+    padding: 5px;
+    margin-left: 15px;
+    padding-top: 40px;
+    
+    
+    
+}
+.profile_main{
+    width: 100vw;
+    margin-top: 80px;
+    height: 550px;
+    background-color: rgb(157, 194, 253);  
+    opacity:1;
+    position: fixed;
+    border-radius: 40px 40px 0px 0px;
+   
+   
+
+
+}
+label{
+    margin-right: 25px;
+    /* border-bottom:1px solid black ; */
+    padding-bottom: 30px;
+    padding: 5px;
+    font-size: larger;
+    
+}
+
+input{
+    width: 95%;
+    height: 30px;
+   border: 0px !important;
+   outline: none;
+   background-color: rgb(157, 194, 253);
+   border-bottom: 1px solid black!important;
+   padding: 5px;
+   margin-top: 5px;
+      
+}
+
+
+
+
+
+</style>
+
+
+
+
+</head>
+<body>
+    
+    <div class="profile_header" ><img src="assets/back.png"  width="20px" height="20"><div class="back">Back</div>
+    <div class="edit"><img src="assets/editprofile.png"  width="30px" height="30"></div>
+        <div class="psna"><img src="assets/psna.jpg"></div>
+        
+        <div class="profile_main">
+            <div class="profile">
+            <label>Name</label><br>
+            <input type="text">
+        </div>
+        <div class="profile">
+           <label>Email</label> <br>
+           <input type="text">
+        </div>
+        <div class="profile">
+            <label>FacultyId</label><br>
+            <input type="text">
+        </div>
+        <!-- <div class="profile">
+            <label>Password</label><br>
+            <input type="text">
+        </div> -->
+        </div>
+    </div>
+    
+    
+    
+</body>
+</html>

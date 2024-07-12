@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div id="fixed-header">
+    <div id="sidebar" class="sidenav">
+        <div class="dp" >
+                <img src="image1.png" width="100px" height="100px">
+                
+            <div class="name">sonaLisa</div>
+        </div> 
+        
+      <div onclick="window.location.href='profile.html'"><img src="assets/user (1).png" style="width:25px; height:25px; margin-bottom: -3px;padding-right: 10px;">Profile</div>
+      <div onclick="window.location.href='timetable.html'"><img src="assets/timetable.png" style="width:25px; height:25px; margin-bottom: -5px;padding-right: 10px;">TimeTable</div>
+      <!-- <div onclick="window.location.href='report.html'"><img src="assets/report.png" style="width:25px; height:25px; margin-bottom: -5px;padding-right: 10px;">Report</div> -->
+      <div onclick="window.location.href='settings.html'"><img src="assets/settings.png" style="width:25px; height:25px; margin-bottom: -7px;padding-right: 10px;">Settings</div>
+      <div ><img src="assets/logout (1).png" style="width:25px; height:25px; margin-bottom: -5px;padding-right: 10px;">Logout</div>
+    </div>
+    
+    <div id="slideClose" onclick=hide()></div>
+    
+    <header>
+        <button onclick=show() style="background-color: transparent; border-width: 0px;"><img src="assets/profile1.png" width="35px" height="25px"></button>
+        
+    </header>
+    <nav> 
+        <div class="nav -page" id="dash" data-info='{"page":"dash"}'>DashBoard</div>  
+         <div class="nav -page" id="today" data-info='{"page":"today"}'>Today </div>
+         <div class="nav -page"  id="records" data-info='{"page":"records"}'>Records</div>
+         
+</nav></div>
+<div id="frame">
+    <div class="dash h-page" data-info='{"page":"dash"}'></div>
+    <!--sessions-->
+    <div class="today h-page" data-info='{"page":"today"}'>
+    <div class="session" id="session">
+        <div class="button" id="session_button" style="margin-top:10px;">
+            <div class="b-text">SESSION 1</div>
+                <div class="bottom-button">
+                    
+                    <div>B.TECH IT</div>
+                    <div>#3</div>
+                    <div>A</div>
+                </div>
+        </div>
+        <div class="button" id="session_button">
+            <div class="b-text">SESSION 2</div>
+                <div class="bottom-button">
+                    
+                    <div>B.TECH IT</div>
+                    <div>#3</div>
+                    <div>A</div>
+                </div>
+        </div>
+        <div class="button" id="session_button">
+            <div class="b-text">SESSION 3</div>
+                <div class="bottom-button">
+                    
+                    <div>B.TECH IT</div>
+                    <div>#3</div>
+                    <div>A</div>
+                </div>
+        </div>
+        <div class="button" id="session_button">
+            <div class="b-text">SESSION 4</div>
+                <div class="bottom-button">
+                    
+                    <div>B.TECH IT</div>
+                    <div>#3</div>
+                    <div>A</div>
+                </div>
+        </div>
+        <div class="button" id="session_button">
+            <div class="b-text">SESSION 5</div>
+                <div class="bottom-button">
+                    
+                    <div>B.TECH IT</div>
+                    <div>#3</div>
+                    <div>A</div>
+                </div>
+        </div>
+        <div class="button" id="session_button">
+            <div class="b-text">SESSION 6</div>
+                <div class="bottom-button">
+                    
+                    <div>B.TECH IT</div>
+                    <div>#3</div>
+                    <div>A</div>
+                </div>
+        </div>
+        <div class="button" id="session_button">
+            <div class="b-text">SESSION 7</div>
+                <div class="bottom-button">
+                    
+                    <div>B.TECH IT</div>
+                    <div>#3</div>
+                    <div>A</div>
+                </div>
+        </div>
+        <div class="button" id="session_button">
+            <div class="b-text">SESSION 8</div>
+                <div class="bottom-button">
+                    
+                    <div>B.TECH IT</div>
+                    <div>#3</div>
+                    <div>A</div>
+                </div>
+        </div>
+        </div>
+        <div id="attendance_temp-session" style="display:none; margin-top:5px;" >
+           <div id="name_button" >
+            <div class="content-left"><img src="assets/profile2.png" class="stud_profile" width="50px" height="50px"></div>
+            <div class="content-center">
+                <div class="stud_name" >Dinesh</div>
+                <div >921321205035</div>
+            </div>
+                <div class="content-right">P</div>
+           </div>
+           <div id="name_button">
+            <div class="content-left"><img src="assets/profile2.png" class="stud_profile" width="50px" height="50px"></div>
+            <div class="content-center">
+                <div class="stud_name" >Dinesh</div>
+                <div >921321205035</div>
+            </div>
+                <div class="content-right">P</div>
+           </div>
+           <div id="name_button">
+            <div class="content-left"><img src="assets/profile2.png" class="stud_profile" width="50px" height="50px"></div>
+            <div class="content-center">
+                <div class="stud_name" >Dinesh</div>
+                <div >921321205035</div>
+            </div>
+                <div class="content-right">P</div>
+           </div>
+           <div id="name_button">
+            <div class="content-left"><img src="assets/profile2.png" class="stud_profile" width="50px" height="50px"></div>
+            <div class="content-center">
+                <div class="stud_name" >Dinesh</div>
+                <div >921321205035</div>
+            </div>
+                <div class="content-right">P</div>
+           </div>
+           <div id="name_button">
+            <div class="content-left"><img src="assets/profile2.png" class="stud_profile" width="50px" height="50px"></div>
+            <div class="content-center">
+                <div class="stud_name" >Dinesh</div>
+                <div >921321205035</div>
+            </div>
+                <div class="content-right">P</div>
+           </div>
+           <div id="name_button">
+            <div class="content-left"><img src="assets/profile2.png" class="stud_profile" width="50px" height="50px"></div>
+            <div class="content-center">
+                <div class="stud_name" >Dinesh</div>
+                <div >921321205035</div>
+            </div>
+                <div class="content-right">P</div>
+           </div>
+           <div id="name_button">
+            <div class="content-left"><img src="assets/profile2.png" class="stud_profile" width="50px" height="50px"></div>
+            <div class="content-center">
+                <div class="stud_name" >Dinesh</div>
+                <div >921321205035</div>
+            </div>
+                <div class="content-right">P</div>
+           </div>
+           <div id="name_button">
+            <div class="content-left"><img src="assets/profile2.png" class="stud_profile" width="50px" height="50px"></div>
+            <div class="content-center">
+                <div class="stud_name" >Dinesh</div>
+                <div >921321205035</div>
+            </div>
+                <div class="content-right">P</div>
+           </div>
+           <div id="name_button">
+            <div class="content-left"><img src="assets/profile2.png" class="stud_profile" width="50px" height="50px"></div>
+            <div class="content-center">
+                <div class="stud_name" >Dinesh</div>
+                <div >921321205035</div>
+            </div>
+                <div class="content-right">P</div>
+           </div>
+           <div id="name_button">
+            <div class="content-left"><img src="assets/profile2.png" class="stud_profile" width="50px" height="50px"></div>
+            <div class="content-center">
+                <div class="stud_name" >Dinesh</div>
+                <div >921321205035</div>
+            </div>
+                <div class="content-right">P</div>
+           </div>
+           <div id="name_button">
+            <div class="content-left"><img src="assets/profile2.png" class="stud_profile" width="50px" height="50px"></div>
+            <div class="content-center">
+                <div class="stud_name" >Dinesh</div>
+                <div >921321205035</div>
+            </div>
+                <div class="content-right">P</div>
+           </div>
+           <div id="name_button">
+            <div class="content-left"><img src="assets/profile2.png" class="stud_profile" width="50px" height="50px"></div>
+            <div class="content-center">
+                <div class="stud_name" >Dinesh</div>
+                <div >921321205035</div>
+            </div>
+                <div class="content-right">P</div>
+           </div>
+           <div id="name_button">
+            <div class="content-left"><img src="assets/profile2.png" class="stud_profile" width="50px" height="50px"></div>
+            <div class="content-center">
+                <div class="stud_name" >Dinesh</div>
+                <div >921321205035</div>
+            </div>
+                <div class="content-right">P</div>
+           </div>
+           <div id="name_button">
+            <div class="content-left"><img src="assets/profile2.png" class="stud_profile" width="50px" height="50px"></div>
+            <div class="content-center">
+                <div class="stud_name" >Dinesh</div>
+                <div >921321205035</div>
+            </div>
+                <div class="content-right">P</div>
+           </div>
+           <div id="name_button">
+            <div class="content-left"><img src="assets/profile2.png" class="stud_profile" width="50px" height="50px"></div>
+            <div class="content-center">
+                <div class="stud_name" >Dinesh</div>
+                <div >921321205035</div>
+            </div>
+                <div class="content-right">P</div>
+           </div>
+           <div id="name_button">
+            <div class="content-left"><img src="assets/profile2.png" class="stud_profile" width="50px" height="50px"></div>
+            <div class="content-center">
+                <div class="stud_name" >Dinesh</div>
+                <div >921321205035</div>
+            </div>
+                <div class="content-right">P</div>
+           </div>
+           <center><div class="b1">submit </div></center>
+        </div>
+    </div>
+    <div class="rec h-page" data-info='{"page":"records"}'>
+        <div class="stick">
+            <form class="Calendar">
+             
+              <input class="c1" type="date" width="100%">
+            </form>
+            
+            <div class="icon" id="icon">
+              <img class="save" id="save" src="assets/approve.png">
+              <i class="fa fa-fw fa-edit" id="editbutton" style="margin-right: 5px;" ></i >
+              </div>
+            <div class="main" id="main">
+            <div class="button-rec" id="button">
+            <div class="c2">SESSION 8</div>
+            <div class="calendar_button">
+                
+                <div>B.TECH IT</div>
+                <div>#3</div>
+                <div>A</div>
+            </div>
+            </div>
+            <div class="button-rec" id="button">
+            <div class="c2">SESSION 8</div>
+            <div class="calendar_button">
+                
+                <div>B.TECH IT</div>
+                <div>#3</div>
+                <div>A</div>
+            </div>
+            </div>
+            <div class="button-rec" id="button">
+            <div class="c2">SESSION 8</div>
+            
+            <div class="calendar_button">
+                
+                <div>B.TECH IT</div>
+                <div>#3</div>
+                <div>A</div>
+            </div>
+            </div>
+            </div>
+          
+              <div class="s1" id="head">
+                  <div class="s2">
+                  <div class="g1">
+                      <div class="p1">Present</div>
+                      <div class="p2">50</div>
+                  </div>
+                  <div class="g1">
+                      <div class="p1">Absent</div>
+                      <div class="p2">5</div>
+                  </div>
+                  <div class="g1" style="border-right:0px !important">
+                      <div class="p1">OD</div>
+                      <div class="p2">5</div>
+                  </div>
+                  </div>
+              
+                  <div class="g2">
+                      <div class="p1">Total</div>
+                      <div class="p2">60</div>
+                  </div>
+                  
+          
+              </div>
+          
+          </div>   
+              <div id="attendance_temp-rec" style="display:none; margin-top:5px;" >
+                  <div id="name_button" >
+                   <div class="content-left">
+                      <img src="assets/profile2.png" class="stud_profile" width="50px" height="50px"></div>
+                   <div class="content-center">
+                       <div class="stud_name" >Dinesh</div>
+                       <div >921321205035</div>
+                   </div>
+                       <div class="content-right">P</div>
+                  </div>
+                  <div id="name_button">
+                   <div class="content-left"><img src="assets/profile2.png" class="stud_profile" width="50px" height="50px"></div>
+                   <div class="content-center">
+                       <div class="stud_name" >Dinesh</div>
+                       <div >921321205035</div>
+                   </div>
+                       <div class="content-right">P</div>
+                  </div>
+                  <div id="name_button">
+                   <div class="content-left"><img src="assets/profile2.png" class="stud_profile" width="50px" height="50px"></div>
+                   <div class="content-center">
+                       <div class="stud_name" >Dinesh</div>
+                       <div >921321205035</div>
+                   </div>
+                       <div class="content-right">P</div>
+                  </div>
+                  <div id="name_button">
+                   <div class="content-left"><img src="assets/profile2.png" class="stud_profile" width="50px" height="50px"></div>
+                   <div class="content-center">
+                       <div class="stud_name" >Dinesh</div>
+                       <div >921321205035</div>
+                   </div>
+                       <div class="content-right">P</div>
+                  </div>
+                  <div id="name_button">
+                   <div class="content-left"><img src="assets/profile2.png" class="stud_profile" width="50px" height="50px"></div>
+                   <div class="content-center">
+                       <div class="stud_name" >Dinesh</div>
+                       <div >921321205035</div>
+                   </div>
+                       <div class="content-right">P</div>
+                  </div>
+                  <div id="name_button">
+                   <div class="content-left"><img src="assets/profile2.png" class="stud_profile" width="50px" height="50px"></div>
+                   <div class="content-center">
+                       <div class="stud_name" >Dinesh</div>
+                       <div >921321205035</div>
+                   </div>
+                       <div class="content-right">P</div>
+                  </div>
+                  <div id="name_button">
+                   <div class="content-left"><img src="assets/profile2.png" class="stud_profile" width="50px" height="50px"></div>
+                   <div class="content-center">
+                       <div class="stud_name" >Dinesh</div>
+                       <div >921321205035</div>
+                   </div>
+                       <div class="content-right">P</div>
+                  </div>
+                  <div id="name_button">
+                   <div class="content-left"><img src="assets/profile2.png" class="stud_profile" width="50px" height="50px"></div>
+                   <div class="content-center">
+                       <div class="stud_name" >Dinesh</div>
+                       <div >921321205035</div>
+                   </div>
+                       <div class="content-right">P</div>
+                  </div>
+                  <div id="name_button">
+                   <div class="content-left"><img src="assets/profile2.png" class="stud_profile" width="50px" height="50px"></div>
+                   <div class="content-center">
+                       <div class="stud_name" >Dinesh</div>
+                       <div >921321205035</div>
+                   </div>
+                       <div class="content-right">P</div>
+                  </div>
+                  <div id="name_button">
+                   <div class="content-left"><img src="assets/profile2.png" class="stud_profile" width="50px" height="50px"></div>
+                   <div class="content-center">
+                       <div class="stud_name" >Dinesh</div>
+                       <div >921321205035</div>
+                   </div>
+                       <div class="content-right">P</div>
+                  </div>
+                  <div id="name_button">
+                   <div class="content-left"><img src="assets/profile2.png" class="stud_profile" width="50px" height="50px"></div>
+                   <div class="content-center">
+                       <div class="stud_name" >Dinesh</div>
+                       <div >921321205035</div>
+                   </div>
+                       <div class="content-right">P</div>
+                  </div>
+                  <div id="name_button">
+                   <div class="content-left"><img src="assets/profile2.png" class="stud_profile" width="50px" height="50px"></div>
+                   <div class="content-center">
+                       <div class="stud_name" >Dinesh</div>
+                       <div >921321205035</div>
+                   </div>
+                       <div class="content-right">P</div>
+                  </div>
+                  <div id="name_button">
+                   <div class="content-left"><img src="assets/profile2.png" class="stud_profile" width="50px" height="50px"></div>
+                   <div class="content-center">
+                       <div class="stud_name" >Dinesh</div>
+                       <div >921321205035</div>
+                   </div>
+                       <div class="content-right">P</div>
+                  </div>
+                  <div id="name_button">
+                   <div class="content-left"><img src="assets/profile2.png" class="stud_profile" width="50px" height="50px"></div>
+                   <div class="content-center">
+                       <div class="stud_name" >Dinesh</div>
+                       <div >921321205035</div>
+                   </div>
+                       <div class="content-right">P</div>
+                  </div>
+                  <div id="name_button">
+                   <div class="content-left"><img src="assets/profile2.png" class="stud_profile" width="50px" height="50px"></div>
+                   <div class="content-center">
+                       <div class="stud_name" >Dinesh</div>
+                       <div >921321205035</div>
+                   </div>
+                       <div class="content-right">P</div>
+                  </div>
+                  <div id="name_button">
+                   <div class="content-left"><img src="assets/profile2.png" class="stud_profile" width="50px" height="50px"></div>
+                   <div class="content-center">
+                       <div class="stud_name" >Dinesh</div>
+                       <div >921321205035</div>
+                   </div>
+                       <div class="content-right">P</div>
+                  </div>
+                  
+               </div>
+               
+            </div>
+    </div>
+</div>
+
+
+    <script>
+    var openButton=document.getElementById("sidebar");
+    var closeButton=document.getElementById("slideClose");
+    var iframe=document.getElementById("sub_screen")
+    function show(){
+    openButton.style.left="0%";
+    closeButton.style.display="block";
+    closeButton.style.marginLeft="0px";
+    }
+    function hide(){
+    openButton.style.left="-65%";
+    closeButton.style.display="none";
+    }
+    // const today=document.getElementById("today")
+    // today.addEventListener('click',()=>{
+    //     today.style.textDecoration="underline";
+    //     records.style.textDecoration="none";
+    //     dash.style.textDecoration="none";
+    //     // iframe.src="session_staff.html";
+
+        
+    // })
+    // const records=document.getElementById("records")
+    // records.addEventListener('click',()=>{
+    //     records.style.textDecoration="underline";
+    //     today.style.textDecoration="none";
+    //     dash.style.textDecoration="none";
+    //     // iframe.src="records_staff.html";
+    // })
+    
+    // const dash=document.getElementById("dash")
+    // dash.addEventListener('click',()=>{
+    //     dash.style.textDecoration="underline";
+    //     today.style.textDecoration="none";
+    //     records.style.textDecoration="none";
+    //     // iframe.src="dashboard_staff.html";
+    
+
+    // })
+    const pages=document.getElementsByClassName("-page")
+    const hPage=document.getElementsByClassName("h-page")
+    for(const page of pages){
+        page.addEventListener("click",()=>{
+            const parentInfo=JSON.parse(page.getAttribute("data-info")).page;
+            console.log(parentInfo);
+            for(const page of pages){
+                const childInfo=JSON.parse(page.getAttribute("data-info")).page;
+                if(parentInfo===childInfo){
+                    if(parentInfo==="today"){
+
+                    }
+                    page.style.textDecoration="underline";
+
+                }
+                else{
+                    page.style.textDecoration="none";
+                }
+            }
+            for(const h of hPage){
+                const childInfo=JSON.parse(h.getAttribute("data-info")).page
+                console.log(childInfo)
+                if(parentInfo===childInfo){
+                    console.log(childInfo)
+                    h.style.display="block";
+                }
+                else{
+                    h.style.display="none";
+                }
+            }
+        })
+    }
+    </script>
+    <script src="JavaScript/session_staff.js"></script>
+    </body>
+</html>
